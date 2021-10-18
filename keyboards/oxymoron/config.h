@@ -21,11 +21,11 @@
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-/* number of backlight levels */
+#define LED_CAPS_LOCK_PIN D2
+#define LED_PIN_ON_STATE 1
 
-#ifdef BACKLIGHT_PIN
-#define BACKLIGHT_LEVELS 3
-#endif
+#define ENCODERS_PAD_A { D0 }
+#define ENCODERS_PAD_B { D1 }
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCING 5
