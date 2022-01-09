@@ -1,5 +1,4 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+#pragma once
 
 #include "config_common.h"
 
@@ -8,15 +7,14 @@
 #define PRODUCT_ID      0x7370
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    rainkeebs
-#define PRODUCT         splashpad
-#define DESCRIPTION     3x3 macropad
+#define PRODUCT         Chrispad
 
 /* key matrix size */
 #define MATRIX_ROWS 3
 #define MATRIX_COLS 3
 
 /* key matrix pins */
-#define DIRECT_PINS { { C4, D1, D2}, { B3, D6, D5 }, { B2, B1, B0} }
+#define DIRECT_PINS { { F4, D3, D0}, { F5, D2, D4 }, { F6, D1, C6} }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -29,7 +27,7 @@
 #endif
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCING_DELAY 5
+#define DEBOUNCING 5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -45,20 +43,5 @@
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
-#define IGNORE_MOD_TAP_INTERRUPT
-
-/* rgbs */
-#define RGB_DI_PIN B6
-#define RGBLED_NUM 5
-
-#ifdef RGB_DI_PIN
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 5
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
-#endif
-
 #define VIAL_KEYBOARD_UID {0x2A, 0x9B, 0xF3, 0xF2, 0xBA, 0x04, 0x17, 0xCF}
 
-#endif
