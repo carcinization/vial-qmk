@@ -65,7 +65,7 @@
 
 #define DRIVER_LED_TOTAL RGBLED_NUM
 
-#define RGBLIGHT_ANIMATIONS
+// #define RGBLIGHT_ANIMATIONS
 
 #ifdef RGB_MATRIX_ENABLE
 #define RGB_MATRIX_KEYPRESSES // reacts to keypresses
