@@ -1,0 +1,12 @@
+VIA_ENABLE = yes
+VIAL_ENABLE = yes
+RGBLIGHT_ENABLE = yes
+LTO_ENABLE = yes
+VIAL_INSECURE = yes
+POINTING_DEVICE_ENABLE = yes
+SRC = pimoroni_trackball.c
+QUANTUM_LIB_SRC = i2c_master.c
+MOUSEKEY_ENABLE = no
+EXTRAKEY_ENABLE = yes
+COMMAND_ENABLE = no
+POINTING_DEVICE_DRIVER = pimoroni_trackball
