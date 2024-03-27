@@ -17,35 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
-
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0x6D77 // mw = "MechWild"
-#define PRODUCT_ID      0x1705
-#define DEVICE_VER      0x0301
-#define MANUFACTURER    MechWild
-#define PRODUCT         MurphPad
-
-/* Key matrix size */
-#define MATRIX_ROWS 6
-#define MATRIX_COLS 5
-
-/* Key matrix pins */
-#define MATRIX_ROW_PINS { F5, B2, B3, B1, F7, F6 }
-#define MATRIX_COL_PINS { B5, D7, C6, D4, B6 }
-#define UNUSED_PINS
-
-/* Encoder pins */
-#define ENCODERS_PAD_A { E6, D2 }
-#define ENCODERS_PAD_B { B4, D3 }
-
-/* Encoder resolution */
-#define ENCODER_RESOLUTION 4
-#define TAP_CODE_DELAY 10
-
-/* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
-
 #define OLED_FONT_H "keyboards/mechwild/murphpad/lib/murphpadfont.c"
 
 #define RGB_DI_PIN F4
@@ -84,11 +55,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
-
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
-
-/* Bootmagic Lite key configuration */
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 1
